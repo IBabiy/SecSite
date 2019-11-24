@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SECOND SITE</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
 </head>
 <body>
 
@@ -13,11 +15,79 @@
 
         <div class="section-first">
             <div class="Eligane">
-                <div class="title">eliguage</div>
+                <div class="title">
+                    <img src="logo.svg" class = 'title'>
+                </div>
                 <div class="subtitle">Talk to people artificial language</div>
             </div>
 
-            <div class="form"></div>
+
+            <div class="form">
+                <div class="tabs">
+                    <label title = 'join' class = 'tab active'>Join us</label>
+                    <label title = 'sign' class = 'tab'>Sign in</label>
+                </div>
+
+                    <form class="tab-form active">
+                        <input type="text" placeholder="Name">
+                        <input type="e-mail" placeholder="E-mail">
+                        <input type="password" placeholder="Password">
+                        <p>If you’re the celebrity, enter the code to create a language</p>
+                        <input type="text" placeholder="Code">
+                        <button class="Reg">Register now</button>
+
+                    </form>
+                    
+                    <form class = 'tab-form'>
+                        <input type='e-mail' placeholder="E-mail">
+                        <input type='password' placeholder="Password">
+                        <button id='qwerty' class="Reg">Sign in</button>
+                    </form>
+            </div>
+
+        </div>
+
+        <div class="section-second">
+            <div class="el-title">What is Elinguage?</div>
+            <div class="el-subtitle">Web platform for communication using different artificial languages. New idea for your and your friends. Enjoy your conversation!</div>
+            <div class="el-title-second">How it works?</div>
+            <div class="icon-space">
+                <div class="icon-block">
+                    <div class="icon">
+                        <img src="plus.svg" alt="">
+                    </div>
+                    <div class="icon-space-title">start</div>
+                    <div class="icon-space-subtitle">Register or sign in</div>
+                </div>
+                <div class="icon-block">
+                    <div class="icon">
+                        <img src="translate.svg" alt="">
+                    </div>
+                    <div class="icon-space-title">translate</div>
+                    <div class="icon-space-subtitle">Write word or expression. Choose the languge and translate</div>
+                </div>
+                <div class="icon-block">
+                    <div class="icon">
+                        <img src="share.svg" alt="">
+                    </div>
+                    <div class="icon-space-title">share</div>
+                    <div class="icon-space-subtitle">Share the five-letter conversation code with other members, who can use to join your group</div>
+                </div>
+                <div class="icon-block">
+                    <div class="icon">
+                        <img src="Create.svg" alt="">
+                    </div>
+                    <div class="icon-space-title">create</div>
+                    <div class="icon-space-subtitle">Crate your own langeuge!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="logo.svg" class="footer-logo">
+            </div>
+            <div class="footer-connect">Connect with us <p>support@elinguage.com</p></div>
         </div>
 
     </div>

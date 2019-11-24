@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/main-photo.jpg) no-repeat top / cover;
+    background: url(main-photo.jpg) no-repeat top / cover;
     height: 1000px;
 }
 
@@ -24,21 +26,229 @@
     align-items: center;
     height: 400px;
     width:610px;
+    margin-right: 50px;
 
 }
 
 .title{
-    font-size: 120px;
-    text-transform: uppercase;
-    color: black;
-    display: inline-block;
-    line-height: 100px;
-    font-family: "Times New Roman", "sans-serif";
-    margin-bottom: 40px;
+    height: 228px;
+    width: 400px;
 }
   
 .subtitle{
+    font-family: 'Catamaran', sans-serif;
     text-align: center;
     font-size: 70px;
     color: black;
+}
+
+.form{
+    width: 380px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    background: #2e4546;
+    margin-left: 50px;
+}
+.tab-form{
+    background: #2e4546;
+    padding: 10px;
+    display: none;
+}
+
+.tab-form.active{
+    display: block;
+}
+.form input{
+    padding: 0 10px;
+    display: block;
+    height: 50px;
+    margin: 10px 0 15px 0;
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+    width: 93%;
+    border: none;
+}
+
+.tabs{
+    display: flex;
+}
+
+.form p{
+    height: 55px;
+    margin: -5px 0;
+    color:white;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+
+}
+
+label.tab.active{
+    background-color: #2e4546;
+    color: #ffffff;
+}
+
+.active{
+    display: none;
+}
+
+.tab{
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    background: #c1c7c7;
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 15px;
+    display: block;
+    width: 44%;
+    cursor: pointer;
+}
+
+.tab-form button{
+    display: inline-block;
+    width: 99%;
+    height: 50px;
+    text-align: center;
+    background: #ff6600;
+    text-decoration: none;
+    color: #2e4546ed;
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.section-second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+
+.el-title{
+    color: #00a8b2;
+    font-size: 50px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.el-subtitle{
+    width: 900px;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.el-title-second{
+    color: #00a8b2;
+    font-size: 50px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top:40px;
+}
+
+.icon-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.icon-block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 270px;
+    height: 230px;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+}
+
+.icon-space-title{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Catamaran', sans-serif;
+    color: #00a8b2;
+    text-transform: uppercase;
+}
+
+.icon-space-subtitle{
+    margin-top:10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    background-color:#333333;;
+}
+
+.footer-logo{
+    margin-left: 20px;
+    width: 140px;
+    height: 80px;
+}
+
+.footer-logo img{
+    filter: invert(2);
+}
+
+.footer-connect{
+    color: white;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Catamaran', sans-serif;
+}
+
+@media (max-width: 1240px){
+    .main{
+        width: 100%;
+    }
+
+    .Eligane{
+        margin: 0;
+    }
+
+    .form{
+        margin: 50px 0;
+        
+    }
+
+    .section-first{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1920px){
+    .main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 920px){
+    .el-subtitle{
+        width: 400px;
+        font-size: 15px;
+        text-align: center;
+    }
 }
